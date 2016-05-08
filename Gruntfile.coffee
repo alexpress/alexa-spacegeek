@@ -1,5 +1,4 @@
 fs = require 'fs'
-aws = require './.aws.json'
 
 
 module.exports = ( grunt ) ->
@@ -14,7 +13,7 @@ module.exports = ( grunt ) ->
 
     lambda_deploy :
       default :
-        arn : aws.lambda.arn
+        arn : require('./.aws.json').lambda.arn
 
     copy :
       build :
