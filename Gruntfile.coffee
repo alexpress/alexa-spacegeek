@@ -1,5 +1,9 @@
 fs = require 'fs'
 
+try
+  arn = require( './.aws.json' ).lambda.arn
+catch e
+  console.log e
 
 module.exports = ( grunt ) ->
 
@@ -13,11 +17,11 @@ module.exports = ( grunt ) ->
 
     lambda_deploy :
       default :
-        arn : require('./.aws.json').lambda.arn
+        arn : arn
 
     copy :
       build :
-        src : ['package.json', 'speech/**/*.{txt,ssml}']
+        src : [ 'package.json', 'speech/**/*.{txt,ssml}' ]
         dest : 'build/'
 
     clean :
