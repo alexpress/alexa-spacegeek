@@ -51,7 +51,9 @@ grunt deploy
 
 ### Hooking up to an Alexa Skill 
 
-Follow the standard procedure to create a new skill and point it to your lambda `arn`.
+Follow the standard procedure to create a new skill and point it to your lambda `arn`. Intent and sample utterances can be found in the `assets` directory.
+
+
 
 
 
