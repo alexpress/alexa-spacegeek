@@ -2,6 +2,8 @@
 
 This is a port of the SpaceGeek application from Amazon's Alexa Skill Kit to the `alexpress` API using AWS Lambda.
 
+[![Build Status](https://travis-ci.org/alexpress/alexa-spacegeek.svg?branch=master)](https://travis-ci.org/alexpress/alexa-spacegeek)
+
 ## How to Use
 
 ### Clone via github
